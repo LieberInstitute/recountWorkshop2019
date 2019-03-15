@@ -1,120 +1,63 @@
-# Insert Workshop Title
+# Using the recount2 resource and related tools
 
-# Instructor(s) name(s) and contact information
+# Instructor name
 
-Provide names and contact information for all instructors.
+Leonardo Collado-Torres
+
+* [GitHub](https://github.com/lcolladotor)
+* [Twitter](https://twitter.com/fellgernon)
+* [Email](mailto:leo.collado@libd.org)
 
 # Workshop Description
 
-Along with the topic of your workshop, include how students can expect
-to spend their time. For the description may also include information
-about what type of workshop it is (e.g. instructor-led live demo, lab,
-lecture + lab, etc.). Instructors are strongly recommended to provide
-completely worked examples for lab sessions, and a set of stand-alone
-notes that can be read and understood outside of the workshop.
+The recount2 project re-processed RNA sequencing (RNA-seq) data on over 70,000 human RNA-seq samples spanning a variety of tissues, cell types and disease conditions. Researchers can easily access these data via the `recount` Bioconductor package, and can quickly import gene, exon, exon-exon junction and base-pair coverage data for uniformly processed data from the SRA, GTEx and TCGA projects in R for analysis. This workshop will include an overview of the recount2 project as well as methods and tools that have been to improve it since 2017. The overview will be followed by a hands-on session where you will dive into `recount` and related packages along the lines of the [recount workflow](http://bioconductor.org/packages/release/workflows/html/recountWorkflow.html).
+
+In more detail, this workshop will cover different use cases of the `recount` package, including downloading and normalizing data, processing and cleaning relevant phenotype data (including `recount-brain`), performing differential expression (DE) analyses, and creating reports for exploring the results using other Bioconductor packages. The workshop will also cover how to use the base-pair coverage data for annotation-agnostic DE analyses and for visualizing coverage data for features of interest. After taking this workshop, attendees will be ready to enhance their analyses by leveraging RNA-seq data from 70,000 human samples.
+
+[recount2 website](https://jhubiostatistics.shinyapps.io/recount/), [recount package](http://bioconductor.org/packages/recount), [paper](http://www.nature.com/nbt/journal/v35/n4/full/nbt.3838.html), [recount workflow](http://bioconductor.org/packages/release/workflows/html/recountWorkflow.html).
 
 ## Pre-requisites
 
-List any workshop prerequisites, for example:
-
 * Basic knowledge of R syntax
-* Familiarity with the GenomicRanges class
-* Familiarity with xyz vignette (provide link)
+* Basic knowledge of RNA-seq or gene expression data
+* Familiarity with the RangedSummarizedExperiment class
+* Familiarity with SummarizedExperiment [vignette](http://bioconductor.org/packages/release/bioc/vignettes/SummarizedExperiment/inst/doc/SummarizedExperiment.html)
 
-List relevant background reading for the workshop, including any
-theoretical background you expect students to have.
-
-* List any textbooks, papers, or other reading that students should be
-  familiar with. Include direct links where possible.
+If you are curious, we taught a similar workshop at [BioC2017](http://research.libd.org/recountWorkshop/) that will be updated for this BioC2019. That original workshop lead to the [recount workflow](http://bioconductor.org/packages/release/workflows/html/recountWorkflow.html) which we also plan to update this year.
 
 ## Workshop Participation
 
-Describe how students will be expected to participate in the workshop.
+Students are expected to ask questions during the recount2 overview presentation and to bring their own laptop so they can follow the hands-on portion of the workshop.
 
-## _R_ / _Bioconductor_ packages used
+## _Bioconductor_ packages used
 
-List any _R_ / _Bioconductor_ packages that will be explicitly covered.
+`SummarizedExperiment`, `recount`, `GenomicRanges`, `DESeq2`, `derfinder`, `regionReport` are among the packages that will be explicitly covered.
 
 ## Time outline
 
-An example for a 45-minute workshop:
-
 | Activity                     | Time |
 |------------------------------|------|
-| Packages                     | 15m  |
-| Package Development          | 15m  |
-| Contributing to Bioconductor | 5m   |
-| Best Practices               | 10m  |
+| recount2 project and updates overview                    | 30m  |
+| break 1 / package setup and troubleshooting | 5 min |
+| accessing gene count data with recount          | 15m  |
+| using recount-brain | 15m   |
+| break 2 | 5 min |
+| in depth example analysis | 30m  |
+| closing remarks | 5m |
+
+Total: 1h 45 min.
 
 # Workshop goals and objectives
 
-List "big picture" student-centered workshop goals and learning
-objectives. Learning goals and objectives are related, but not the
-same thing. These goals and objectives will help some people to decide
-whether to attend the conference for training purposes, so please make
-these as precise and accurate as possible.
-
-*Learning goals* are high-level descriptions of what
-participants will learn and be able to do after the workshop is
-over. *Learning objectives*, on the other hand, describe in very
-specific and measurable terms specific skills or knowledge
-attained. The [Bloom's Taxonomy](#bloom) may be a useful framework
-for defining and describing your goals and objectives, although there
-are others.
-
 ## Learning goals
 
-Some examples:
-
-* describe how to...
-* identify methods for...
-* understand the difference between...
+* Understand the publicly data available via the recount2 project beyond gene counts
+* Identify how recount2 data could be useful for your RNA-seq projects and how you can use it
+* Describe the annotation-agnostic methods powered by recount2 that complement other RNA-seq analysis pipelines
 
 ## Learning objectives
 
-* analyze xyz data to produce...
-* create xyz plots
-* evaluate xyz data for artifacts
-
-### A note about learning goals and objectives (#bloom)
-
-While not a new or modern system for thinking about learning,
-[Bloom's taxonomy][1] is one useful framework for understanding the
-cognitive processes involved in learning. From lowest to highest
-cognitive requirements:
-
-1. Knowledge: Learners must be able to recall or remember the
-   information.
-2. Comprehension: Learners must be able to understand the information.
-3. Application: Learners must be able to use the information they have
-   learned at the same or different contexts.
-4. Analysis: Learners must be able to analyze the information, by
-   identifying its different components.
-5. Synthesis: Learners must be able to create something new using
-   different chunks of the information they have already mastered.
-6. Evaluation: Learners must be able to present opinions, justify
-   decisions, and make judgments about the information presented,
-   based on previously acquired knowledge.
-
-To use Bloom's taxonomy, consider the following sets of verbs and
-descriptions for learning objectives:
-
-1. Remember: Memorize, show, pick, spell, list, quote, recall, repeat,
-   catalogue, cite, state, relate, record, name.
-2. Understand: Explain, restate, alter, outline, discuss, expand,
-   identify, locate, report, express, recognize, discuss, qualify,
-   covert, review, infer.
-3. Apply: Translate, interpret, explain, practice, illustrate,
-   operate, demonstrate, dramatize, sketch, put into action, complete,
-   model, utilize, experiment, schedule, use.
-4. Analyze: Distinguish, differentiate, separate, take apart,
-   appraise, calculate, criticize, compare, contrast, examine, test,
-   relate, search, classify, experiment.
-5. Evaluate: Decide, appraise, revise, score, recommend, select,
-   measure, argue, value, estimate, choose, discuss, rate, assess,
-   think.
-6. Create: Compose, plan, propose, produce, predict, design, assemble,
-   prepare, formulate, organize, manage, construct, generate, imagine,
-   set-up.
-
-[1]: https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/ "Bloom's Taxonomy"
+* Re-analyze public RNA-seq data using the recount Bioconductor package
+* Recognize how to access the different types of data hosted by recount2
+* Locate resources that enhance recount2 such as recount-brain and review how to use them
+* Produce a HTML report of a differential expression analysis
