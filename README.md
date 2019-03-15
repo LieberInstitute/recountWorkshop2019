@@ -1,6 +1,6 @@
 # Using the recount2 resource and related tools
 
-# Instructor name
+# Instructor
 
 Leonardo Collado-Torres
 
