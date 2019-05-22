@@ -6,7 +6,7 @@ Leonardo Collado-Torres
 
 * [GitHub](https://github.com/lcolladotor)
 * [Twitter](https://twitter.com/fellgernon)
-* [Email](mailto:leo.collado@libd.org)
+* [Email](mailto:lcolladotor@gmail.com)
 
 # Workshop Description
 
