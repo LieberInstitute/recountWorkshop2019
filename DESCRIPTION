@@ -35,12 +35,11 @@ Imports:
     rtracklayer,
     GenomicFeatures,
     bumphunter,
-    derfinderPlot
+    derfinderPlot,
+    sessioninfo
 Suggests:
     knitr,
-    sessioninfo,
-    rmarkdown,
-    knitcitations
+    rmarkdown
 NeedsCompilation: no
 URL: https://github.com/LieberInstitute/recountWorkshop2019
 BugReports: https://github.com/LieberInstitute/recountWorkshop2019/issues
