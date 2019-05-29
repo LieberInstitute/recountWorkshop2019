@@ -1,5 +1,5 @@
 ---
-title: "recount workshop: Learn to leverage 70,000 human RNA-seq samples for your projects"
+title: "Using the recount2 resource and related tools"
 author: 
   - name: Leonardo Collado-Torres
     affiliation:
@@ -19,7 +19,7 @@ author:
     - Department of Mental Health, Johns Hopkins University
 date: July 20, 2017
 vignette: >
-  %\VignetteIndexEntry{recount workshop: Learn to leverage 70,000 human RNA-seq samples for your projects}
+  %\VignetteIndexEntry{Using the recount2 resource and related tools}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8} 
 bibliography: recount-workshop.bib

@@ -1,6 +1,5 @@
 Package: recountWorkshop2019
-Title: recount workshop: Learn to leverage 70,000 human RNA-seq samples for your
-    projects
+Title: Using the recount2 resource and related tools
 Version: 0.99.0
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut", "cre"),
     email = "lcolladotor@gmail.com"), person("Abhinav", "Nellore", role = "ctb",
