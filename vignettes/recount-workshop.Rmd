@@ -225,19 +225,19 @@ knitr::include_graphics("Figure12.png")
 
 Having reviewed how the coverage counts in recount2 were produced, we can now do a differential expression analysis. We will use data from [GSE67333](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67333) [@magistri2015] whose overall design was: _We performed directional RNA sequencing on high quality RNA samples extracted from hippocampi of 4 late onset Alzheimer's disease (LOAD) and 4 age-matched controls._ The function `download_study()` requires a SRA accession id which can be found using `abstract_search()`. `download_study()` can then be used to download the gene coverage count data as well as other expression features. The files are saved in a directory named after the SRA accession id, in this case SRP056604.
 
-To facilitate this workshop, we included the data in the `recountWorkshop` package. It can be located with the `system.file()` function as shown below.
+To facilitate this workshop, we included the data in the `recountWorkshop2019` package. It can be located with the `system.file()` function as shown below.
 
 ```{r "localPath"}
 ## Locate path with the data
-library("recountWorkshop")
-local_path <- system.file("extdata", "SRP056604", package = "recountWorkshop")
+library("recountWorkshop2019")
+local_path <- system.file("extdata", "SRP056604", package = "recountWorkshop2019")
 dir(local_path)
 ```
 
 ```{r "testing locally", echo = FALSE, eval = FALSE}
 ## For testing
 if(FALSE) {
-    local_path <- "/Users/lcollado/Dropbox/Code/recountWorkshop/inst/extdata/SRP056604"
+    local_path <- "/Users/lcollado/Dropbox/Code/recountWorkshop2019/inst/extdata/SRP056604"
 }
 ```
 
@@ -821,7 +821,7 @@ if(FALSE) {
 
 ## Using the file locally, included in the workshop package
 gencode_v25_hg38 <- import(system.file("extdata",
-    "gencode.v25.annotation.gtf.gz", package = "recountWorkshop"))
+    "gencode.v25.annotation.gtf.gz", package = "recountWorkshop2019"))
             
 ## Keep only the chr12 info
 gencode_v25_hg38 <- keepSeqlevels(gencode_v25_hg38, "chr12",
