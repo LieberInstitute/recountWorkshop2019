@@ -48,5 +48,5 @@ Suggests:
     rmarkdown,
     knitcitations
 NeedsCompilation: no
-URL: https://github.com/LieberInstitute/recountWorkshop
-BugReports: https://github.com/LieberInstitute/recountWorkshop/issues
+URL: https://github.com/LieberInstitute/recountWorkshop2019
+BugReports: https://github.com/LieberInstitute/recountWorkshop2019/issues
