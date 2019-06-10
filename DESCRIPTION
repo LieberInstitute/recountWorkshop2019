@@ -1,6 +1,6 @@
 Package: recountWorkshop2019
 Title: Using the recount2 resource and related tools
-Version: 0.99.0
+Version: 0.99.1
 Authors@R: c(person("Leonardo", "Collado-Torres", role = c("aut", "cre"),
     email = "lcolladotor@gmail.com"), person("Abhinav", "Nellore", role = "ctb",
     email = "anellore@gmail.com"), person(c("Andrew", "E."), "Jaffe",
@@ -38,6 +38,7 @@ Imports:
     derfinderPlot,
     sessioninfo
 Suggests:
+    bookdown,
     knitr,
     rmarkdown
 NeedsCompilation: no
