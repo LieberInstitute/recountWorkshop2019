@@ -586,7 +586,7 @@ browseURL("SRP056604_main-results.html")
 
 Using `clusterProfiler` [@clusterProfiler] we can then perform several enrichment analyses. The gene names from the recount2 objects use Gencode ids, which do not work by default with `org.Hs.eg.db`. To make sure they do, we can simply change the ids to Ensembl ids. Here we show how to perform an enrichment analysis using the biological process ontology. We will the genes that have a p-value as the universe background.
 
-```{r "go_analysis", out.width="100%", fig.align="center", fig.width = 7, fig.height = 5}
+```{r "go_analysis", out.width="100%", fig.align="center", fig.width = 8, fig.height = 5}
 library("clusterProfiler")
 library("org.Hs.eg.db")
 
@@ -1019,7 +1019,7 @@ rmarkdown::pandoc_version()
 ## Time for reproducing this workflow, in minutes
 round(proc.time()[3] / 60, 1)
 
-options(width = 100)
+options(width = 150)
 library("sessioninfo")
 session_info()
 ```
