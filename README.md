@@ -1,4 +1,5 @@
 # Using the recount2 resource and related tools
+[![DOI](https://zenodo.org/badge/175835474.svg)](https://zenodo.org/badge/latestdoi/175835474)
 
 # Instructor
 
